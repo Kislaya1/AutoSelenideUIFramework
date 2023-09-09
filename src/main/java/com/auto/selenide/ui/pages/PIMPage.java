@@ -1,14 +1,15 @@
 package com.auto.selenide.ui.pages;
 
-import static com.auto.selenide.ui.enums.FileLocations.EMPLOYEE_PROFILE_IMAGE;
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.$$;
-
 import com.auto.selenide.ui.entity.EmployeeDetails;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+
+import static com.auto.selenide.ui.enums.FileLocations.EMPLOYEE_PROFILE_IMAGE;
+import static com.codeborne.selenide.Condition.enabled;
+import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Selectors.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$$;
 
 public class PIMPage {
 

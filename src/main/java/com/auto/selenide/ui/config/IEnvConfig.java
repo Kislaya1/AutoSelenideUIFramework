@@ -6,12 +6,18 @@ import org.aeonbits.owner.Config;
 @Config.Sources({
         "system:properties",
         "system:env",
-        "file:${user.dir}/src/test/resources/prod-config.properties"
+        "file:${user.dir}/src/test/resources/env.properties"
 })
 public interface IEnvConfig extends Config {
     @DefaultValue("prod")
     String environment();
 
-    @Key("${environment}.url")
+    @Key("${environment}_url")
     String webUrl();
+
+    @Key("${environment}_username")
+    String username();
+
+    @Key("${environment}_password")
+    String password();
 }
