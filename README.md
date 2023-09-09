@@ -17,12 +17,6 @@ Hi All, I created this UI Framework in order to automate a Web Application
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Core Features </span>
 
 - [x] Use [Selenide](https://selenide.org/) as an automation framework.
-  It is a beautiful framework created as Wrapper to Selenium.
-  It provides various advantages over Selenium, some of which can be mentioned are: — <br/>
-  a) Powerful Selectors <br/>
-  b) Simple Configuration <br/>
-  c) Fluent APIs for tests <br/>
-  d) In-build Assertions <br/>
 - [x] Use [Allure Reporting](https://docs.qameta.io/allure/) in order to generate beautiful reports.
 - [x] Use [PODAM](http://mtedone.github.io/podam/) library to autofill Java POJOs with random fake data.
 - [x] Use [Fixture Factory Library](https://github.com/six2six/fixture-factory) in order to build and organize fake
