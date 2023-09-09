@@ -58,7 +58,7 @@ some of which can be mentioned are: — a) Powerful Selectors, b) Simple Configu
 mvn clean test -Denv=<Environment_Name>
 ```
 Here :<br />
-a) Environment_Name: It will be based on [env.properties]() file (currently it is either PROD / QA but user can add multiple as required)<br />
+a) Environment_Name: It will be based on [env.properties](https://github.com/Kislaya1/AutoSelenideUIFramework/blob/master/src/test/resources/env.properties) file (currently it is either PROD / QA but user can add multiple as required)<br />
 
 For eg :
 ```
