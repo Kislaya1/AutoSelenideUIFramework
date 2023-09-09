@@ -10,8 +10,8 @@ Hi All, I created this UI Framework in order to automate a Web Application
 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Pre-Requisite </span>
 
-1. Java 11—as the language of choice for writing this test framework.
-2. Maven 3.8.x or greater - for project dependency management.
+1. Java 11 — as the language of choice for writing this test framework.
+2. Maven 3.8.2 - for project dependency management.
 3. Any of your favorite IDEs (I prefer IntelliJ, but code is independent of any IDEs)
 
 ## <span style="font-family: Calibri; font-size: 2.8em;"> Core Features </span>
