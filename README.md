@@ -25,7 +25,7 @@ It provides various advantages over Selenium, some of which can be mentioned are
 - [x] Use [Allure Reporting](https://docs.qameta.io/allure/) in order to generate beautiful reports.
 - [x] Use [PODAM](http://mtedone.github.io/podam/) library to autofill Java POJOs with random fake data.
 - [x] Use [Fixture Factory Library](https://github.com/six2six/fixture-factory) in order to build and organize fake objects for tests using template format. For
-  further understanding check out the [EmployeeDetailsTemplate](https://github.com/Kislaya1/RestApiProFramework/blob/main/src/main/java/com/rest/api/pro/templates/BookingTemplates.ja)
+  further understanding check out the [EmployeeDetailsTemplate](https://github.com/Kislaya1/AutoSelenideUIFramework/blob/master/src/main/java/com/auto/selenide/ui/templates/EmployeeDetailsTemplate.java)
   file inside the project.
 - [x] Use [Owner Library](https://matteobaccan.github.io/owner/) in order to fetch properties file data using a simple
   Annotation-Based Approach. The user is not required to code for loading, converting, and managing of properties files.
