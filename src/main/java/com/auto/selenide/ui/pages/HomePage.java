@@ -16,9 +16,9 @@ public class HomePage {
         this.leftMenuComponent = new LeftMenuComponent();
     }
 
-    public AddEmployeePage navigateToPimPage() {
+    public PIMPage navigateToPimPage() {
         PROFILE_ICON.shouldBe(visible);
         leftMenuComponent.selectAMenuFromLeftMenuBar(PIM);
-        return new AddEmployeePage();
+        return new PIMPage();
     }
 }

@@ -13,21 +13,21 @@ import com.auto.selenide.ui.pages.components.PIMPageNavComponent;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 
-public class AddEmployeePage {
+public class PIMPage {
   private final PIMPageNavComponent pimPageNavComponent;
     private static final SelenideElement FIRST_NAME = $(byName("firstName"));
     private static final SelenideElement MIDDLE_NAME = $(byName("middleName"));
     private static final SelenideElement LAST_NAME = $(byName("lastName"));
     private static final SelenideElement EMPLOYEE_ID = $(byXpath(".//label[text()='Employee Id']/parent::div/parent::div/div/input"));
     private static final SelenideElement IMAGE_BUTTON = $(byXpath("//input[@type='file']"));
-    private static final SelenideElement SUBMIT_BUTTON = $(withText("Save"));
+    private static final SelenideElement SAVE_BUTTON = $(withText("Save"));
     private static final ElementsCollection SUCCESS_MSG = $$(withText("Success"));
 
-  public AddEmployeePage() {
+  public PIMPage() {
     this.pimPageNavComponent = new PIMPageNavComponent();
   }
 
-  public AddEmployeePage addNewEmployee(final EmployeeDetails employeeDetails) {
+  public PIMPage addNewEmployee(final EmployeeDetails employeeDetails) {
         pimPageNavComponent.selectNavOptionFromPIMPage(ADD_EMPLOYEE);
         FIRST_NAME.shouldBe(visible).setValue(employeeDetails.getFirstName());
         MIDDLE_NAME.shouldBe(visible).setValue(employeeDetails.getMiddleName());
@@ -35,7 +35,7 @@ public class AddEmployeePage {
         EMPLOYEE_ID.shouldBe(visible).clear();
         EMPLOYEE_ID.shouldBe(visible).setValue(Integer.toString(employeeDetails.getEmployeeId()));
         IMAGE_BUTTON.shouldBe(enabled).uploadFromClasspath(EMPLOYEE_PROFILE_IMAGE.getLocation());
-        SUBMIT_BUTTON.shouldBe(visible).click();
+        SAVE_BUTTON.shouldBe(visible).click();
         return this;
     }
 

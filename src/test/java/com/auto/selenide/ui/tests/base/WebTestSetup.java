@@ -9,7 +9,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class WebTestSetup extends TestSetup {
     private static final IEnvConfig config = ConfigFactory.create(IEnvConfig.class);
-
     @BeforeEach
     void setUp() {
         Configuration.headless = false;
